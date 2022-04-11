@@ -1,4 +1,31 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ContactForm from '../ContactForm';
+import ContactList from '../ContactList';
+import Filter from '../Filter';
+import Container from '../Container';
+import { TitleMain, Title } from './App.styled';
+
+function App() {
+  return (
+    <Container>
+      <ToastContainer />
+      <TitleMain>Phonebook</TitleMain>
+      <ContactForm />
+      <Title>Contacts</Title>
+      <Filter />
+      <ContactList />
+    </Container>
+  );
+}
+
+export default App;
+
+//-------------------------------------------------
+//--------react хуки-----------
+//-------------------------------------------------
+/* import React, { useState, useEffect, useMemo } from 'react';
 import { nanoid } from 'nanoid';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -77,8 +104,11 @@ function App() {
 }
 
 export default App;
+ */
 
+//-------------------------------------------------
 //-------class-------
+//-------------------------------------------------
 /* class App extends Component {
   state = {
     contacts: [

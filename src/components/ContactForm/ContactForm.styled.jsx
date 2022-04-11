@@ -11,11 +11,11 @@ export const Form = styled.form`
   border-radius: 7px;
   margin-bottom: 40px;
   padding: 20px;
-  box-shadow: 5px 6px 4px #4d0c0370;
-  background-color: #faddd9;
+  box-shadow: 5px 6px 4px #d6503e70;
+  background-color: #af4335;
   &:hover {
-    box-shadow: 1px 2px 1px #d6503e, 3px 5px 4px #f53c23, 5px 11px 8px #9c2818,
-      10px 20px 15px #4d0c03;
+    box-shadow: 1px 2px 1px #9c2818, 3px 5px 4px #f53c23, 5px 11px 8px #d6503e,
+      10px 20px 15px #d6503e;
     transition: all 400ms cubic-bezier(0.4, 0, 0.3, 1);
   }
 `;
@@ -24,7 +24,7 @@ export const Label = styled.label`
   display: inline-flex;
   justify-content: flex-start;
   margin-bottom: 10px;
-  color: #4d0c03;
+  color: #fff;
   font-size: 25px;
   font-weight: 500;
   text-shadow: 1px 1px 2px #4d0c03;
@@ -40,7 +40,7 @@ export const Input = styled.input`
   margin-bottom: 20px;
   color: #4d0c03;
   font-size: 20px;
-  box-shadow: 5px 6px 4px #4d0c0370;
+  box-shadow: 3px 4px 2px #ffffff50;
 
   &:hover,
   &:focus {
@@ -56,7 +56,7 @@ export const InputBottom = styled(Input)`
 export const Button = styled.button`
   display: block;
   width: 50%;
-  border-radius: 10px;
+  border-radius: 7px;
   border: 1px solid transparent;
   padding: 5px 10px;
   margin-bottom: 20px;
@@ -64,16 +64,15 @@ export const Button = styled.button`
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #4d0c03;
+  color: #861607;
   background-color: #fff;
-  box-shadow: 5px 6px 4px #4d0c0370;
-  text-shadow: 2px 1px 2px #4d0c03;
+  text-shadow: 1px 1px 2px #4d0c03;
+  box-shadow: 3px 4px 2px #ffffff50;
 
   &:hover {
     color: #fff;
-    background-color: #d4240d;
-    box-shadow: 1px 2px 1px #d6503e, 3px 5px 4px #f53c23, 5px 11px 8px #9c2818,
-      10px 20px 15px #4d0c03;
+    background-color: #861607;
+    box-shadow: 1px 2px 1px #9c2818, 3px 5px 4px #861607;
     transition: all 400ms cubic-bezier(0.4, 0, 0.3, 1);
   }
 `;
